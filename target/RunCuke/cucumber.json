@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User is on homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 743071000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User enters username",
+            "match": {
+              "location": "LoginPageSteps.userEntersUsername()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 139477200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters Password",
+            "match": {
+              "location": "LoginPageSteps.userEntersPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235823100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "LoginPageSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7648291000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "User should Login Successfully with valid Credentials",
+        "description": "",
+        "id": "sauce-demo;user-should-login-successfully-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1220775900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 218910100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is able to Login and able to verify text Products",
+            "match": {
+              "location": "LoginPageSteps.userIsAbleToLoginAndAbleToVerifyTextProducts()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 8,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Sauce Demo",
+    "description": "",
+    "id": "sauce-demo",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
